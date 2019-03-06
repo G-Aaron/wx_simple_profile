@@ -7,7 +7,7 @@ import numpy as np
 
 class MyWordCloud(object):
 
-    def __init__(self, word_str, background_color="white", max_words=5000, mask_image="images/car.jpeg",
+    def __init__(self, word_str, background_color="white", max_words=5000, mask_image="images/animal.jpeg",
                  max_font_size=100, min_font_size=10, random_state=42,
                  font_path="fonts/simhei.ttf"):
         self.word_str = word_str

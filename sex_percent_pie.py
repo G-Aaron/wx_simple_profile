@@ -1,11 +1,11 @@
 from pyecharts import Pie
 
+
 class SexPercentPie(object):
 
-    def __init__(self,friends,theme = "dark"):
+    def __init__(self, friends, theme="red"):
         self.friends = friends
         self.pie = Pie("{}的微信好友性别占比".format(friends[0]["NickName"]))
-        self.pie.use_theme(theme)
         self.attr = ["男性好友", "女性好友", "其他"]
 
     def render(self):
@@ -30,5 +30,5 @@ class SexPercentPie(object):
         print("女性好友：{:.2f}，个数：{}".format(female_friend_percent, female))
         print("其他：{:.2f}，个数{}".format(other_friend_percent, other))
         image_path = "images/sexPercentPie.png"
-        self.pie.render(path=image_path)
+        self.pie.render(image_path)
         return image_path
