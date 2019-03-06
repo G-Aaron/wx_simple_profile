@@ -35,6 +35,12 @@ python 3.7.1
 
 安装 [wordcloud](https://github.com/amueller/word_cloud) `pip3 install wordcloud`
 需安装 [visual c++ build tools](http://go.microsoft.com/fwlink/?LinkId=691126)
+
+安装地图库
+`pip3 install echarts-countries-pypkg`
+`pip3 install echarts-china-provinces-pypkg`
+`pip3 install echarts-china-cities-pypkg`
+
 #### 使用说明
 
 运行__main__.py，微信扫码登陆后图片会陆续发送给文件助手

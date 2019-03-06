@@ -66,5 +66,5 @@ class CityGeo(object):
     def render(self):
         print(self.data)
         image_path = "images/cityGeo.png"
-        self.geo.render()
+        self.geo.render(image_path)
         return image_path
